@@ -18,7 +18,9 @@ git clone https://github.com/vJourneyman/agent-job-app-tailor.git
 
 This skill is fully standalone and can be copied into the skills folder of your preferred AI client. Follow the guide below for your environment:
 
-### 1. Where to Copy the Files
+### Where to Copy the Files
+
+I usually dedicate an entire directory for my job applications as a project. That's what we'll call the project root. For example, I might put that in `~/projects/job-search-YYYY/`
 
 Copy the entire `agent-job-app-tailor` skill folder into the appropriate directory relative to your project root:
 
@@ -41,7 +43,7 @@ After copying the files, launch your AI client and prompt it to start the agent.
 * **Interactive CLI**:
   Run the command in your project root:
   ```bash
-  antigravity-cli
+  agy
   ```
   *(or `agy` if configured as a shell alias)*
   
