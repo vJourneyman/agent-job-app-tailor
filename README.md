@@ -20,7 +20,7 @@ This skill is fully standalone and can be copied into the skills folder of your 
 
 ### Where to Copy the Files
 
-I usually dedicate an entire directory for my job applications as a project. That's what we'll call the project root. For example, I might put that in `~/projects/job-search-YYYY/`
+I usually dedicate an entire directory for my job applications as a project. That's what we'll call the `{project-root}`. For example, I might put that in `~/projects/job-search-YYYY/`
 
 Copy the entire `agent-job-app-tailor` skill folder into the appropriate directory relative to your project root:
 
