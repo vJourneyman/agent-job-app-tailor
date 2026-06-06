@@ -4,6 +4,16 @@ An outcome-driven, memory-enabled BMad agent that acts as a warm career coach an
 
 ---
 
+## Getting Started
+
+### Clone the Repository
+
+Clone this repository directly into the appropriate folder of your AI client tool:
+
+```bash                                                                                                           
+git clone https://github.com/vJourneyman/agent-job-app-tailor.git
+```
+
 ## Installation & Setup
 
 This skill is fully standalone and can be copied into the skills folder of your preferred AI client. Follow the guide below for your environment:
@@ -100,6 +110,41 @@ During your first session, the agent will guide you through:
 * Confirming the file paths to your **Resume and Cover Letter YAML Libraries**.
 * *Note: If you do not have YAML files set up, the agent will offer to ingest your raw text resumes/CLs to build them.*
 * Aligning on the **Coaching-vs-Editing balance** (how direct or supportive you prefer the feedback to be).
+
+---
+
+## Job Application Tailoring Loop (Step-by-Step)
+
+For each new position you apply to, follow this simple workflow loop with the agent:
+
+### Step 1: Start the Session & Activate the Agent
+Launch your AI client and command it to initialize the Tailor:
+> Please activate the Job Application Tailor.
+
+### Step 2: Provide the Job Details
+When prompted, provide:
+1. Target **Company Name** (e.g., `Google`)
+2. Target **Role Title** (e.g., `Senior Systems Engineer`)
+3. The **Job Description** (copy-paste it directly or provide a local path to the text file)
+
+### Step 3: Address Missing Experience (Gap Interview)
+The agent will scan the Job Description and compare it against your master resume library:
+* **No gaps found**: The agent proceeds directly to tailoring.
+* **Gaps found**: The agent will pause and ask you questions, one at a time, to find similar experience in your background. It will provide **3 conventional** and **3 creative spark examples** to help jog your memory and craft a new bullet point.                                                                                                   
+                                                                                                                      
+### Step 4: Review and Refine the Drafts
+The agent will present:
+* A side-by-side comparison of your original resume bullets vs. the newly tailored ones.
+* A custom, tailored cover letter draft.
+
+Review the phrasing and reply with any adjustments you want to make (e.g., *"Make the resume summary sound a bit more technical"* or *"Change the metric in the second bullet"*).
+
+### Step 5: Save and Output
+Once you approve the drafts, the agent automatically:
+1. **Creates a Job Folder**: Generates `{project-root}/applications/YYYY-MM-DD-company-role/`.
+2. **Saves Final Artifacts**: Writes `job-description.txt`, `resume.md` (formatted via `RESUME-template.md`), and `cover-letter.md` (formatted via `COVER-LETTER-template.md`) into the new folder.                                   
+3. **Merges with Master Database**: Appends the approved tailored variations to your master YAML library files and
+  runs validation scripts to guarantee data integrity.
 
 ---
 
