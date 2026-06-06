@@ -43,7 +43,7 @@ After copying the files, launch your AI client and prompt it to start the agent.
 * **Interactive CLI**:
   Run the command in your project root:
   ```bash
-  agy
+  antigravity-cli
   ```
   *(or `agy` if configured as a shell alias)*
   
