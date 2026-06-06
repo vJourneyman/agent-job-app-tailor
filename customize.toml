@@ -1,0 +1,17 @@
+# DO NOT EDIT -- overwritten on every update.
+#
+# Agent customization surface for agent-job-app-tailor.
+# Team overrides:     {project-root}/_bmad/custom/agent-job-app-tailor.toml
+# Personal overrides: {project-root}/_bmad/custom/agent-job-app-tailor.user.toml
+
+[agent]
+
+# --- Metadata (install-time roster contract) ---
+# Consumed by module.yaml:agents[] and `[agents.<code>]` in central config.
+
+code = "job-app-tailor"
+name = ""
+title = "Job Application Tailor"
+icon = "💼"
+description = "Warm career coach and precise editor that tailors application materials using a master YAML library."
+agent_type = "memory"
